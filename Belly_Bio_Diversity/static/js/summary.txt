@@ -1,0 +1,28 @@
+first of all 70 % of the code is given.
+1. the first part of the code is building function to render data inti metadata panel in UI.
+ the code is using d3,json to grab record about each participant from sample_metadata table
+ it is like displaying related record from associated table. if it was spatial data it could have relation class 
+declaring varibale to select sample number(primary key) from sample meta data table and tied back to sample in samples table
+// Use `.html("") to clear any existing metadata when new sample selected by user and it would set the content from sample metadata  and overwrite the content of newly selected sample.
+    
+// Iterate through each key and value of each object using  `Object.entries` and `forEach`  and append them in div panel using tag for each key value
+
+2.the second part is creating visualization by building chart using function to grab data from our path 
+fetching eachsample from samples table
+
+// declaring  varible using const to have better performance when rendering our charts
+// for this project  the  three variable(otu_ids,otu_labels,sample_values) won't be changed for the life time of the research because they are holding unique value for each participant data.
+  //Build Bubble chart
+// Create a Bubble Chart that uses data from  samples route (/samples/<sample>) to display each sample.
+providing data and layout for pie and Bubble
+
+the last part of the code is initialization the dashboard and setting the first sample  to build the initial plot by creating funcion 
+delcaring variable using d3.select to set source for the dropdown from sampple column
+  // Use the first sample from the list to build the initial plots
+
+  the final function is setting the dashboard to be intteractive when new sample is selected
+    
+
+
+
+    
